@@ -17,29 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHA-01-otk">
-                                <rect key="frame" x="49" y="72" width="127" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dID-5w-OUu">
+                                <rect key="frame" x="117" y="295" width="156" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-r0-ivH">
-                                <rect key="frame" x="49" y="154" width="221" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-br-EUe">
+                                <rect key="frame" x="136" y="399" width="118" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="btn1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9F6-IK-0IC"/>
+                                    <action selector="plusOneByButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9g5-kp-672"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dID-5w-OUu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9bW-LY-zXK"/>
+                            <constraint firstItem="Y01-br-EUe" firstAttribute="centerX" secondItem="dID-5w-OUu" secondAttribute="centerX" id="Fib-Yn-dgM"/>
+                            <constraint firstItem="Y01-br-EUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="KTO-Vx-C8q"/>
+                            <constraint firstItem="dID-5w-OUu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="R46-hb-g9Z"/>
+                            <constraint firstItem="Y01-br-EUe" firstAttribute="top" secondItem="dID-5w-OUu" secondAttribute="bottom" constant="50" id="Val-Jx-q2Q"/>
+                            <constraint firstItem="dID-5w-OUu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="251" id="naN-cV-kul"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="btn1" destination="o0p-r0-ivH" id="0tq-pb-gpw"/>
-                        <outlet property="label1" destination="FHA-01-otk" id="Hqj-CL-soa"/>
+                        <outlet property="counterLabel" destination="dID-5w-OUu" id="SyV-Ij-4AG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
